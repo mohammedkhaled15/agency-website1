@@ -1,0 +1,59 @@
+body{
+    height: 4000px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* main colors  */
+:root{
+    --mist:#90afc5;
+    --stone:#336b87;
+    --shadow:#2a3132;
+    --automn-foliage:#763626;
+}
+/* start navbar */
+.navbar{
+    padding:0 ;
+}
+nav.bg-dark{
+    background-color: var(--shadow) !important;
+}
+.navbar-dark .navbar-brand{
+    font-family:'Dancing Script', "cursive";
+    font-size: 35px;
+    color: var(--mist);
+    font-weight: bold;
+}
+nav .collapse > ul > li > a{
+    color: var(--mist) !important;
+    font-weight: bold;
+    padding: 20px !important;
+    font-size: 18px;
+}
+nav .collapse ul li a.active{
+    background-color: var(--automn-foliage);
+}
+nav .dropdown-menu{
+    background-color: var(--automn-foliage);
+    margin-top: 0 !important;
+    border-top: solid 2px var(--stone);
+}
+nav .dropdown-menu li a{
+    padding: 4px 8px !important;
+    color: var(--mist);
+    font-size: 16px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+nav .dropdown-menu li:hover a{
+    padding-left: 15px !important;
+    font-weight: bold;
+    color: var(--shadow);
+    background-color: var(--mist);
+}
+nav .dropdown-menu .dropdown-divider {
+    background-color: var(--stone);
+    height: 3px;
+}
+/* end navbar */
