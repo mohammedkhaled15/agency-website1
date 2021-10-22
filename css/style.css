@@ -22,11 +22,16 @@ nav.bg-dark{
     color: var(--mist);
     font-weight: bold;
 }
+
 nav .collapse > ul > li > a{
     color: var(--mist) !important;
     font-weight: bold;
     padding: 20px !important;
     font-size: 18px;
+}
+@media(max-width:992px){
+    nav .collapse ul li a{
+    padding:5px !important;
 }
 nav .collapse ul li a.active{
     background-color: var(--automn-foliage);
