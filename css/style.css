@@ -2,6 +2,18 @@ body{
     height: 4000px;
     font-family: 'Josefin Sans', sans-serif;
     /* background-color: var(--mist); */
+    scroll-behavior: smooth;
+}
+body a i{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 40px;
+    color: var(--automn-foliage);
+    z-index: 20;
 }
 /* main colors  */
 :root{
@@ -72,7 +84,7 @@ nav .dropdown-menu .dropdown-divider {
     aspect-ratio:9 / 3.7;
     z-index: 1;
 }
-@media (max-width: 575.98px){
+@media (max-width: 676px){
     .carousel-inner .carousel-item img{
         aspect-ratio:5 / 4.5 !important;
     }
@@ -118,7 +130,7 @@ nav .dropdown-menu .dropdown-divider {
     left: 50%;
     transform: translatex(-50%);
 }
-@media (max-width: 575.98px){
+@media (max-width: 880px){
     .carousel .carousel-inner h1{
         display: none;
     }
@@ -156,6 +168,9 @@ nav .dropdown-menu .dropdown-divider {
 }
 /* end carousel */
 /* start prices */
+.prices{
+    margin-bottom: 60px;
+}
 .prices h2{
     margin-bottom: 60px;
 }
@@ -247,3 +262,76 @@ nav .dropdown-menu .dropdown-divider {
     margin-bottom: 20px;
 }
 /* end prices */
+/* start team */
+.our-team h2{
+    margin-bottom: 60px;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.team .cell{
+    clip-path: polygon(50% 0, 100% 33%, 100% 66%, 50% 100%, 0 66%, 0 33%);
+    overflow: hidden;
+    position: relative;
+    flex-basis: 30.333%;
+    margin:-2% 1%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+@media (max-width:767px){
+    .team .cell{
+        flex-basis: 250px;
+        margin: 0;
+    }
+}
+.team .cell:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 4;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.team img{
+    width: 100%;
+}
+.cell .caption{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    z-index: 5;
+    opacity: 0;
+}
+.our-team .team .cell:hover:before{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.our-team .team .cell:hover .caption{
+    opacity: 1;
+}
+.our-team .team .cell:hover{
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+}
+/* end team */
