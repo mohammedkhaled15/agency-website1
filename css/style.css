@@ -1,7 +1,7 @@
 body{
     height: 4000px;
     font-family: 'Josefin Sans', sans-serif;
-    /* background-color: var(--mist); */
+    background-color: var(--mist);
     scroll-behavior: smooth;
 }
 body a i{
@@ -210,7 +210,20 @@ nav .dropdown-menu .dropdown-divider {
     -o-border-radius: 15px;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.6);
 }
+.prices .content .bi-bookmark-check-fill,
+.prices .content .bi-bookmark-x-fill{
+    margin-right: 13px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.prices .content .bi-bookmark-check-fill{
+    color: green;
+}
+.prices .content .bi-bookmark-x-fill{
+    color: red;
+}
 .prices .box:hover .content{
+    position: relative;
     transform: translateY(-40px);
     -webkit-transform: translateY(-40px);
     -moz-transform: translateY(-40px);
@@ -233,8 +246,9 @@ nav .dropdown-menu .dropdown-divider {
     font-size: 30px;
     margin-bottom: 30px ;
     font-weight: bold;
+    transform-origin: center;
 }
-.prices .box:hover .content i{
+.prices .box:hover .content i:not(.bi-bookmark-x-fill,.bi-bookmark-check-fill){
     animation: spin infinite 0.5s;
     -webkit-animation: spin  0.5s;
 }
