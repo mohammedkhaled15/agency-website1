@@ -22,7 +22,9 @@
     <title>Bootstrap First Application</title>
 </head>
 <body>
+    <!-- button to go to top -->
     <div id="top"></div>
+
     <!-- start navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -40,17 +42,15 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                    <li><a class="dropdown-item" href="#">Web Hosting</a></li>
-                    <li><a class="dropdown-item" href="#">Free Gigabytes</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Custom Request</a></li>
-
-                </ul>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Hosting</a></li>
+                            <li><a class="dropdown-item" href="#">Free Gigabytes</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Custom Request</a></li>
+                        </ul>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
@@ -67,6 +67,7 @@
         </div>
     </nav>
     <!-- end navbar -->
+
     <!-- start carousel -->
         <div id="carouselExampleIndicators" class="carousel slide  w-100" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -111,6 +112,7 @@
             </button>
         </div>
     <!-- end carousel -->
+
     <!-- start prices -->
     <div class="prices">
         <div class="container">
@@ -172,6 +174,7 @@
         </div>
     </div>
     <!-- end prices -->
+
     <!-- start team -->
     <div class="our-team">
         <h2 class="text-center">Our Lovely Team Members</h2>
@@ -213,8 +216,8 @@
             </div>
         </div>
     </div>
-
     <!-- end team -->
+
     <!-- start stats -->
     <div class="stats">
         <div class="container">
@@ -272,6 +275,48 @@
         </div>
     </div>
     <!-- end stats -->
+
+    <!-- start our-skills -->
+    <div class="our-skills">
+        <h1 class="text-center">Our Team Skills</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="skills col-lg-6 col-12-sm">
+                        <div class="skill">
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" aria-valuemax="100" aria-valuenow="25" aria-valuemin="0" role="progressbar" style="width:25%;">HTML</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" aria-valuemax="100" aria-valuenow="35" aria-valuemin="0" role="progressbar" style="width: 35%;">Css</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" aria-valuemax="100" aria-valuenow="80" aria-valuemin="0" role="progressbar" style="width:80%;">Js</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-success " aria-valuemax="100" aria-valuenow="47" aria-valuemin="0" role="progressbar" style="width:47%;">Anglar</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="top-rated col-lg-6 col-12-sm">
+                        <div class="person d-flex align-items-center">
+                                <img src="imgs/avatar-05.png" alt="...">
+                            <div class="flex-grow-1 ms-3 lead">
+                                This is some content from a media component. You can replace this with any content and adjust it as needed.
+                            </div>
+                        </div>
+                        <div class="person d-flex align-items-center">
+                                <img src="imgs/avatar-06.png" alt="...">
+                            <div class="flex-grow-1 ms-3 lead">
+                                This is some content from a media component. You can replace this with any content and adjust it as needed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- end our-skills -->
+
 
     <!-- start go top -->
     <a href="#top"><i class="bi bi-arrow-up-circle-fill"></i></a>
