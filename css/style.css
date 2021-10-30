@@ -1,7 +1,6 @@
 body{
-    height: 4000px;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: var(--automn-foliage);
+    background-color: #999;
     scroll-behavior: smooth;
 }
 body a i{
@@ -176,7 +175,7 @@ nav .dropdown-menu .dropdown-divider {
     margin-bottom: 60px;
 }
 .prices .base .box{
-    background-color: var(--mist);
+    background-color: rgb(67, 66, 66);
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -459,8 +458,9 @@ nav .dropdown-menu .dropdown-divider {
     color: white;
     font-weight: bold;
     font-size: 18px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
 }
-.our-skills .progress{
+.our-skills .progrss{
     overflow: unset !important;
 }
 .our-skills .progress-bar{
@@ -525,6 +525,7 @@ nav .dropdown-menu .dropdown-divider {
 }
 .contact-us .container h1{
     color: white;
+    margin-bottom: 30px;
 }
 .contact-us .message{
     height: 56%;
@@ -538,5 +539,50 @@ nav .dropdown-menu .dropdown-divider {
 }
 .contact-us button{
     width: 100%;
+    box-shadow: 0px 15px 30px rgb(124 128 174 / 60%);
 }
 /* end contact-us */
+
+/* start footer */
+footer{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: var(--shadow);
+    color: #999;
+}
+footer .site-map h3{
+    color: var(--mist);
+    padding-bottom: 10px;
+}
+footer .site-map li{
+    font-size: 14px;
+    width: 33.3333%;
+    float: left;
+    padding: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+footer .site-map li:hover{
+    color: #fff;
+}
+footer .social h3{
+    color: var(--mist);
+    padding-bottom: 10px;
+}
+footer .social i{
+    cursor: pointer;
+    padding: 8px;
+}
+footer .social i:hover{
+    color: white;
+}
+footer .copyright{
+    font-size: 12px;
+    margin-top: 50px;
+}
+footer .copyright span{
+    color: var(--mist);
+    font-weight: bold;
+    font-family: "dancing script";
+}
+/* end footer */
