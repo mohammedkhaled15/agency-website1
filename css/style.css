@@ -3,6 +3,7 @@ body{
     background-color: #999;
     scroll-behavior: smooth;
 }
+/* go to top button */
 body a i{
     position: fixed;
     bottom: 50px;
@@ -125,7 +126,6 @@ nav .dropdown-menu .dropdown-divider {
 .carousel .carousel-inner h1{
     position: absolute;
     z-index: 3;
-    color: #fff;
     top: 19%;
     left: 50%;
     transform: translatex(-50%);
@@ -175,7 +175,6 @@ nav .dropdown-menu .dropdown-divider {
     margin-bottom: 60px;
 }
 .prices .base .box{
-    background-color: rgb(67, 66, 66);
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -197,7 +196,6 @@ nav .dropdown-menu .dropdown-divider {
     opacity: 0.7 ;
     margin: auto;
     padding: 40px 0;
-    color: #fff;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -357,7 +355,6 @@ nav .dropdown-menu .dropdown-divider {
     background: url(../imgs/glaxy\ bgd.jpg) fixed no-repeat;
     background-size: cover;
     position: relative;
-    color: white;
     z-index: 1;
 }
 .stats:before{
@@ -435,7 +432,6 @@ nav .dropdown-menu .dropdown-divider {
     padding-top: 50px;
     position: relative;
     z-index: 3;
-    color: #fff;
 }
 .our-skills .skills .skill{
     height: 100%;
@@ -444,18 +440,16 @@ nav .dropdown-menu .dropdown-divider {
     margin-bottom: 11.5%;
     height: 10%;
     text-align: center;
+    overflow: visible;
     line-height: 30px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
 }
-.our-skills .progrss{
-    overflow: unset !important;
-}
 .our-skills .progress-bar{
     position: relative;
-    overflow: unset !important;
+    overflow:visible;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -467,11 +461,8 @@ nav .dropdown-menu .dropdown-divider {
     position: absolute;
     left: 100%;
     bottom: 120%;
-    width: 60px;
-    padding: 2px;
-    height: 20px;
+    padding: 4px;
     background-color: black;
-    color: #fff;
     border-radius: 4px;
     line-height: 20px;
     -webkit-border-radius: 4px;
@@ -481,9 +472,6 @@ nav .dropdown-menu .dropdown-divider {
 }
 .our-skills .top-rated .person{
     margin-bottom: 15px;
-}
-.our-skills .top-rated .para{
-    color: #fff;
 }
 .our-skills .top-rated img{
     max-width: 30%;
@@ -552,9 +540,6 @@ footer .site-map li{
     cursor: pointer;
     text-align: center;
 }
-footer .site-map li:hover{
-    color: #fff;
-}
 footer .social h3{
     color: var(--mist);
     padding-bottom: 10px;
@@ -576,3 +561,44 @@ footer .copyright span{
     font-family: "dancing script";
 }
 /* end footer */
+/* start tool box */
+.tool-box{
+    position: fixed;
+    top: 150px;
+    left: 0;
+    z-index: 300;
+}
+.tool-box .color-options{
+    float: left;
+    width: 200px;
+    background-color: #ddd;
+    padding: 10px;
+    border: solid 2px red;
+    transition: 0.3s;
+    display: none;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.tool-box ul{
+    display: flex;
+    justify-content: space-around;
+}
+.tool-box ul li{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.tool-box .gear-check{
+    padding: 5px;
+    background-color: red;
+    color: var(--shadow);
+    cursor: pointer;
+}
+/* end tool box */
