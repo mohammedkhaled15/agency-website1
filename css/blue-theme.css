@@ -1,0 +1,17 @@
+.carousel .carousel-inner h1,
+.prices h2,
+.prices .content,
+.our-team h2,
+.our-skills h1,
+footer .site-map li:hover,
+.our-skills .progress-bar:after,
+.our-skills .top-rated .para,
+.stats{
+    color: #00f;
+}
+.tool-box .gear-check{
+    background-color: #00f;
+}
+.tool-box .color-options{
+    border-color: #00f;
+}

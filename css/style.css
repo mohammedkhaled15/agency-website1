@@ -576,10 +576,6 @@ footer .copyright span{
     border: solid 2px red;
     transition: 0.3s;
     display: none;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
 }
 .tool-box ul{
     display: flex;
@@ -594,11 +590,14 @@ footer .copyright span{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    cursor: pointer;
 }
 .tool-box .gear-check{
     padding: 5px;
     background-color: red;
     color: var(--shadow);
     cursor: pointer;
+    position: relative;
+    left: 0px;
 }
 /* end tool box */
