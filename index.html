@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- wow library -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="icons-1.6.1/font/bootstrap-icons.css">
     <!-- google fonts -->
@@ -41,7 +44,7 @@
             
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,7 +61,7 @@
                 <a class="nav-link" href="#">Features</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="about.html">About us</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -118,12 +121,12 @@
     <!-- start prices -->
     <div class="prices">
         <div class="container">
-            <div class="row">
-                <h2 class="text-center">Our Plans Comes With Different Prices</h2>
-                <div class="base col-lg-3 col-md-6 col-sm-12 text-center">
-                    <div class="box">
+            <div class="row ">
+                <h2 class="text-center wow animate__rubberBand" data-wow-duration="3s">Our Plans Comes With Different Prices</h2>
+                <div class="base col-lg-3 col-md-6 col-sm-12 text-center wow animate__fadeInLeft" data-wow-duration="1s">
+                    <div class="box ">
                         <div class="content">
-                            <i class="bi bi-bootstrap"></i>
+                            <i class="bi bi-bootstrap "></i>
                             <h3>Basic</h3>
                             <h5><i class="bi bi-bookmark-check-fill"></i>Feature</h5>
                             <h5><i class="bi bi-bookmark-x-fill"></i>Feature</h5>
@@ -133,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="base col-lg-3 col-md-6 col-sm-12 text-center">
+                <div class="base col-lg-3 col-md-6 col-sm-12 text-center wow animate__fadeInLeft" data-wow-duration="0.5s">
                     <div class="box">
                         <div class="content">
                             <i class="bi bi-cash-coin"></i>
@@ -146,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="base col-lg-3 col-md-6 col-sm-12 text-center">
+                <div class="base col-lg-3 col-md-6 col-sm-12 text-center wow animate__fadeInRight" data-wow-duration="0.5s">
                     <div class="box">
                         <div class="content">
                             <i class="bi bi-check-circle-fill"></i>
@@ -159,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="base col-lg-3 col-md-6 col-sm-12 text-center">
+                <div class="base col-lg-3 col-md-6 col-sm-12 text-center wow animate__fadeInRight"data-wow-duration="1s">
                     <div class="box">
                         <div class="content">
                             <i class="bi bi-command"></i>
@@ -398,5 +401,7 @@
     <script src="js/jquery3.6.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
 </body>
 </html>
