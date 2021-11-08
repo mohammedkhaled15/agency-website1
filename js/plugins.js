@@ -16,6 +16,14 @@ $(document).ready(function(){
         $("link[href*='theme']").attr("href",$(this).attr("data-value"));
         // console.log($(this).attr("data-value"))
     })
-
-    
 })
+
+$( window ).on("load",function() {
+    $(".loading-page").fadeOut(5000,function(){
+        $("body").css("overflow","auto")
+    })
+  });
+
+//   window.addEventListener('load', (event) => {
+//     console.log('page is fully loaded');
+//   });
